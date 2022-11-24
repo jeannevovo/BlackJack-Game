@@ -72,6 +72,7 @@ pub fn play() {
         if _rank1 == 14 {
             if _rank2 > 10 { 
                 black_jack(); 
+                return;
             } else { 
             player_pts1 += _rank2;
             }
