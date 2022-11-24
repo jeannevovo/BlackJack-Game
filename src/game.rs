@@ -101,7 +101,7 @@ pub fn play() {
         println!("Type stand/hit: ");
         std::io::stdin().read_line(&mut answer).unwrap();
         ch = answer.chars().nth(0).unwrap();
-        if ch == 'h' || ch == 'H' { break;}
+        if ch == 's' || ch == 's' { break;}
 
         //Player gets one more card
 
