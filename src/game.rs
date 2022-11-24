@@ -79,6 +79,7 @@ pub fn play() {
         } else {
             if _rank1 > 10 { 
                 black_jack(); 
+                return;
             } else { 
             player_pts1 += _rank1;
             }
@@ -197,9 +198,9 @@ pub fn black_jack() {
 }
 pub fn status(point: i32) {
     if point == 21 {
-        println!("Great! Let's hit and see what the Dealer got!");
+        println!("Great! Let's stand and see what the Dealer got!");
     } else {
-        println!("Oops! Hit and finger crossed!");
+        println!("Oops! Stand and finger crossed!");
     }
 }
 pub fn compare_points(pl_point: i32, d_point : i32) {
